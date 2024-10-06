@@ -1,7 +1,7 @@
 *{
   margin: 0; 
   padding: 0;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   font-family: Arial, Helvetica, sans-serif;
 }
 .contact{
@@ -17,6 +17,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 5px;
 }
 .nav .content-nav div{
   color: #fff;
@@ -24,10 +25,15 @@
   gap: 10px;
   margin-bottom: 40px;
 }
-@media (max-width: 991px){
+@media (max-width: 1075px){
   .nav{
     width: 25%;
   }
+}
+@media (max-width: 719px){
+  .nav .content-nav div {
+    font-size: 12px;
+    }
 }
 @media (max-width: 591px){
   .nav{
@@ -45,6 +51,7 @@
   justify-content: space-evenly;
   align-items: center;
   margin-left: 40px;
+  width: 400px;
 }
 .contactIcons h4{
   font-size: 30px;
@@ -77,4 +84,40 @@
     font-size: 12px;
     margin-top: 4px;
    }
+}
+.FollowMe{
+  display: flex;
+  flex-wrap: wrap;
+  width: 400px;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.FollowMe .iconsFollow{
+background-color: #111111;
+padding: 10px;
+border-radius: 20px;
+margin-left: 10px;
+}
+.FollowMe i{
+ margin-left: 10px;
+}
+@media (max-width: 591px){
+  .FollowMe .iconsFollow i{
+    display: block;
+    margin-bottom: 5px;
+  }
+  .FollowMe i {
+   margin-left: 0px;
+   padding: 5px;
+}
+}
+@media (max-width: 388px){
+  .FollowMe{
+   flex-direction: column;
+  }
+  .FollowMe .iconsFollow{
+    margin-top: 8px;
+    }
 }
